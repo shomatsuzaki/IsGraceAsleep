@@ -6,14 +6,18 @@ $(document).ready(function() {
 	var rand;
 
 	//display the time in HH:MM AM/PM format
+	if (m < 10) {
+		m = '0' + m;
+	}
+
 	var clock;
 	if (h > 11) {
 		if (h > 12) {
 			h = h - 12;
 		}
-		clock = 'THE TIME IS NOW ' + h + ':' + m + ' PM.';
+		clock = 'THE TIME IS NOW ' + h + ':' + m + 'PM.';
 	} else {
-		clock = 'THE TIME IS NOW ' + h + ':' + m + ' AM.';
+		clock = 'THE TIME IS NOW ' + h + ':' + m + 'AM.';
 	}
 
 	//Grace sleeps from 9PM to 7AM
