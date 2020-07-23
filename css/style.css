@@ -48,13 +48,13 @@ Developer @GA in NYC
 body {
      color: #fff;
      background-color: #000;
-     font-size: 20px;
      font-family: 'Roboto Mono', monospace;
      height: 100vh;
      overflow: hidden;
      background-size: cover;
      background-repeat: no-repeat;
      background-position: 50% 50%;
+     line-height: 1.2;
 }
 
 /******************************************
@@ -69,8 +69,13 @@ body {
 }
 
 #text {
+     font-size: 20px;
      margin-top: 35vh;
      -webkit-text-stroke: 1px #000;
+}
+
+#text span {
+     font-size: 40px;
 }
 
 #clock {
@@ -84,45 +89,63 @@ body {
 }
 
 @media only screen and (min-width: 360px) {
-     body {
-          font-size: 24px;
+     #text {
+          font-size: 25px;
+     }
+
+     #text span {
+          font-size: 50px;
      }
 }
 
 @media only screen and (min-width: 500px) {
-     body {
+     #text {
           font-size: 30px;
+          margin-top: 40vh;
      }
 
-     #text {
-          margin-top: 40vh;
+     #text span {
+          font-size: 60px;
      }
 }
 
 @media only screen and (min-width: 650px) {
-     body {
-          font-size: 45px;
+     #text {
+          font-size: 40px;
+     }
+
+     #text span {
+          font-size: 80px;
      }
 }
 
 @media only screen and (min-width: 800px) {
-     body {
-          font-size: 55px;
+     #text {
+          font-size: 45px;
+          -webkit-text-stroke: 2px #000;
      }
 
-     #text {
-          -webkit-text-stroke: 2px #000;
+     #text span {
+          font-size: 90px;
      }
 }
 
 @media only screen and (min-width: 1000px) {
-     body {
-          font-size: 65px;
+     #text {
+          font-size: 50px;
+     }
+
+     #text span {
+          font-size: 100px;
      }
 }
 
 @media only screen and (min-width: 1200px) {
-     body {
-          font-size: 75px;
+     #text {
+          font-size: 60px;
+     }
+
+     #text span {
+          font-size: 120px;
      }
 }

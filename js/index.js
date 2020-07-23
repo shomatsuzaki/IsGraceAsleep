@@ -15,19 +15,19 @@ $(document).ready(function() {
 		if (h > 12) {
 			h = h - 12;
 		}
-		clock = 'THE TIME IS NOW ' + h + ':' + m + 'PM.';
+		clock = 'THE TIME IS NOW:' + '<br><span>' + h + ':' + m + 'PM</span>';
 	} else {
-		clock = 'THE TIME IS NOW ' + h + ':' + m + 'AM.';
+		clock = 'THE TIME IS NOW:' + '<br><span>' + h + ':' + m + 'AM</span>';
 	}
 
 	//Grace sleeps from 9PM to 7AM
 	var isAsleep;
 	if (6 < h < 21) {
-		isAsleep = 'NO, GRACE IS NOT ASLEEP.';
+		isAsleep = 'NO, GRACE IS:<br><span>NOT ASLEEP</span>';
 		rand = Math.floor(Math.random() * 5) + 1; //random number from 1 to 5
 		imageUrl = './img/awake' + rand + '.jpg';
 	} else {
-		isAsleep = 'YES, GRACE IS ASLEEP.';
+		isAsleep = 'YES, GRACE IS:<br>ASLEEP</span>';
 		rand = Math.floor(Math.random() * 3) + 1; //random number from 1 to 3
 		imageUrl = './img/asleep' + rand + '.jpg';
 	}
