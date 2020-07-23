@@ -70,7 +70,7 @@ body {
 
 #text {
      font-size: 20px;
-     margin-top: 35vh;
+     margin-top: 25vh;
      -webkit-text-stroke: 1px #000;
 }
 
@@ -101,7 +101,7 @@ body {
 @media only screen and (min-width: 500px) {
      #text {
           font-size: 30px;
-          margin-top: 40vh;
+          margin-top: 35vh;
      }
 
      #text span {
