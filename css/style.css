@@ -58,6 +58,45 @@ body {
 }
 
 /******************************************
+/* ANIMATION                   
+/*******************************************/
+
+.scale-up-center {
+     -webkit-animation: scale-up-center 0.8s cubic-bezier(0.860, 0.000, 0.070, 1.000) 0.2s both;
+             animation: scale-up-center 0.8s cubic-bezier(0.860, 0.000, 0.070, 1.000) 0.2s both;
+}
+
+.scale-up-center2 {
+     -webkit-animation: scale-up-center 0.8s cubic-bezier(0.860, 0.000, 0.070, 1.000) 0.7s both;
+             animation: scale-up-center 0.8s cubic-bezier(0.860, 0.000, 0.070, 1.000) 0.7s both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+  }
+}
+
+/******************************************
 /* LAYOUT                   
 /*******************************************/
 
@@ -71,7 +110,8 @@ body {
 #text {
      font-size: 20px;
      margin-top: 25vh;
-     -webkit-text-stroke: 1px #000;
+     /*-webkit-text-stroke: 1px #000;*/
+     text-shadow: 1px 1px 40px #000;
 }
 
 #text span {
@@ -80,12 +120,10 @@ body {
 
 #clock {
      font-weight: 700;
-     /*text-shadow: 1px 1px 40px #000;*/
 }
 
 #isAsleep {
      font-weight: 700;
-     /*text-shadow: 1px 1px 60px #000;*/
 }
 
 @media only screen and (min-width: 360px) {
@@ -122,7 +160,7 @@ body {
 @media only screen and (min-width: 800px) {
      #text {
           font-size: 45px;
-          -webkit-text-stroke: 2px #000;
+          /*-webkit-text-stroke: 2px #000;*/
      }
 
      #text span {
