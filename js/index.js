@@ -26,11 +26,11 @@ $(document).ready(function() {
 	//Grace sleeps from 9PM to 7AM
 	var isAsleep;
 	if (6 < h && h < 21) {
-		isAsleep = 'NO, GRACE IS:<br><span>NOT ASLEEP</span>';
+		isAsleep = 'GRACE IS:<br><span>NOT ASLEEP</span>';
 		rand = Math.floor(Math.random() * 5) + 1; //random number from 1 to 5
 		imageUrl = './img/awake' + rand + '.jpg';
 	} else {
-		isAsleep = 'YES, GRACE IS:<br><span>ASLEEP</span>';
+		isAsleep = 'GRACE IS:<br><span>OBVIOUSLY ASLEEP</span>';
 		rand = Math.floor(Math.random() * 3) + 1; //random number from 1 to 3
 		imageUrl = './img/asleep' + rand + '.jpg';
 	}
