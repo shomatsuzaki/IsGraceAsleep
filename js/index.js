@@ -27,15 +27,19 @@ $(document).ready(function() {
 	var isAsleep;
 	if (6 < h && h < 21) {
 		isAsleep = 'GRACE IS:<br><span>NOT ASLEEP</span>';
-		rand = Math.floor(Math.random() * 5) + 1; //random number from 1 to 5
+		rand = Math.floor(Math.random() * 16) + 1; //random number from 1 to 16
 		imageUrl = './img/awake' + rand + '.jpg';
 	} else {
 		isAsleep = 'GRACE IS:<br><span>OBVIOUSLY ASLEEP</span>';
-		rand = Math.floor(Math.random() * 3) + 1; //random number from 1 to 3
+		rand = Math.floor(Math.random() * 7) + 1; //random number from 1 to 7
 		imageUrl = './img/asleep' + rand + '.jpg';
 	}
 
 	$('body').css('background-image', 'url(' + imageUrl + ')');
 	$('#clock').html(clock);
 	$('#isAsleep').html(isAsleep);
+
+	$('#tryAgain').click(function() {
+		location.reload();
+	});
 });
